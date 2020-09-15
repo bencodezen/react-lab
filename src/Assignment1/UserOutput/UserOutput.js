@@ -4,6 +4,7 @@ class UserOutput extends Component {
   render() {
     return (
       <div>
+        <h2>User: {this.props.username}</h2>
         <p>
           Commodo consequat eiusmod officia qui duis nulla nostrud. Minim culpa
           dolore ea velit. Incididunt eiusmod aliquip excepteur reprehenderit
