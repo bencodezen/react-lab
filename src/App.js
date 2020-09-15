@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './logo.svg'
-import Assignment1 from './Assignment1/Assignment1.js'
+import Assignment1 from './UdemyMax/Assignment1/Assignment1.js'
 import './App.css'
 
 function App() {
