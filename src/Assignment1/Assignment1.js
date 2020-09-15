@@ -13,12 +13,21 @@ class Assignment1 extends Component {
     })
   }
 
+  changeAvatarName = event => {
+    this.setState({
+      username: event.target.value
+    })
+  }
+
   render() {
     return (
       <article className='wrapper'>
         <h1>Assignment 1</h1>
         <button onClick={this.swapAvatar}>Swap Avatar</button>
-        <UserInput />
+        <UserInput
+          onChangeHandler={this.changeAvatarName}
+          value={this.state.username}
+        />
         <UserOutput username={this.state.username} />
         <UserOutput username='Katara' />
         <UserOutput username='Toph' />

@@ -4,8 +4,12 @@ class UserInput extends Component {
   render() {
     return (
       <div>
-        <label>Generic Label</label>
-        <input type='text'></input>
+        <label>Set Custom Avatar Name</label>
+        <input
+          onChange={this.props.onChangeHandler}
+          type='text'
+          value={this.props.value}
+        ></input>
       </div>
     )
   }
