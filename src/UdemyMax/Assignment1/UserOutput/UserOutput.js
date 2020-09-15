@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
-import './UserOutput.css'
 class UserOutput extends Component {
   render() {
+    const wrapperStyles = {
+      border: '1px solid #ccc',
+      marginBottom: '2rem',
+      padding: '2rem'
+    }
+
     return (
-      <div className='user-output'>
+      <div style={wrapperStyles}>
         <h2>User: {this.props.username}</h2>
         <p>
           Commodo consequat eiusmod officia qui duis nulla nostrud. Minim culpa
