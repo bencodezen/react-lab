@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
+import './UserInput.css'
 
 class UserInput extends Component {
   render() {
     return (
-      <div>
-        <label>Set Custom Avatar Name</label>
+      <div className='user-input-wrapper'>
+        <label className='user-input-label'>Set Custom Avatar Name</label>
         <input
+          className='user-input'
           onChange={this.props.onChangeHandler}
           type='text'
           value={this.props.value}
