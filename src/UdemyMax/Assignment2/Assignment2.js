@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import TextInputValidation from './TextInputValidation/TextInputValidation.js'
 
 class Assignment2 extends Component {
   state = {
@@ -19,7 +20,7 @@ class Assignment2 extends Component {
         <h1>Assignment 2</h1>
         <label>Username</label>
         <input type='text' id='username' onChange={this.updateUsernameLength} />
-        <p>Username Length: {this.state.usernameLength}</p>
+        <TextInputValidation inputLength={this.state.usernameLength} />
       </article>
     )
   }
