@@ -18,10 +18,25 @@ class Assignment2 extends Component {
     })
   }
 
+  removeCharacterBox = boxIndex => {
+    const usernameList = this.state.username.split('')
+    usernameList.splice(boxIndex, 1)
+
+    this.setState({
+      username: usernameList.join('')
+    })
+  }
+
   render() {
     const characterBoxes = this.state.username
       .split('')
-      .map(letter => <CharacterBox letter={letter} />)
+      .map((letter, index) => (
+        <CharacterBox
+          letter={letter}
+          key={`character-${index}`}
+          onClickHandler={() => this.removeCharacterBox(index)}
+        />
+      ))
 
     return (
       <article>
